@@ -12,4 +12,6 @@ import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.rememberNavController
-import c
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.mistersomov.coinjet.core_ui.CoinJetTheme
+import com.mistersomov.coinje
