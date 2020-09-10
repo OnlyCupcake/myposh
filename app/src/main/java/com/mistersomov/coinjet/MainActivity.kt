@@ -14,4 +14,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.mistersomov.coinjet.core_ui.CoinJetTheme
-import com.mistersomov.coinje
+import com.mistersomov.coinjet.core_ui.MainTheme
+import com.mistersomov.coinjet.screen.coin.CoinScreen
+import dagger.hilt.android.AndroidEntryPoint
+
+@AndroidEntryPoint
+class MainActivity : Component
