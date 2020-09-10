@@ -36,4 +36,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun SetSystemUiController() {
-    val systemUiContro
+    val systemUiController = rememberSystemUiController()
+    val statusBarColor = CoinJetTheme.colors.primary
+    SideEffect {
+        systemUiController.setStatusBarColor(
+            co
