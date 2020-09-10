@@ -26,4 +26,14 @@ class MainActivity : ComponentActivity() {
             MainTheme {
                 SetOrientation(orientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
                 SetSystemUiController()
-                val navController = remem
+                val navController = rememberNavController()
+
+                CoinScreen(navController = navController)
+            }
+        }
+    }
+}
+
+@Composable
+fun SetSystemUiController() {
+    val systemUiContro
