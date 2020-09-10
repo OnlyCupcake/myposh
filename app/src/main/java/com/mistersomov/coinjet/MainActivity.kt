@@ -24,4 +24,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MainTheme {
-   
+                SetOrientation(orientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+                SetSystemUiController()
+                val navController = remem
