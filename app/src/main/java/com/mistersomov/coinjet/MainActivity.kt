@@ -40,4 +40,13 @@ fun SetSystemUiController() {
     val statusBarColor = CoinJetTheme.colors.primary
     SideEffect {
         systemUiController.setStatusBarColor(
-            co
+            color = statusBarColor
+        )
+    }
+}
+
+@Composable
+fun SetOrientation(orientation: Int) {
+    val context = LocalContext.current
+    DisposableEffect(Unit) {
+        val activity = cont
