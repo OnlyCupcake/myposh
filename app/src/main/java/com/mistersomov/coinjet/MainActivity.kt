@@ -49,4 +49,7 @@ fun SetSystemUiController() {
 fun SetOrientation(orientation: Int) {
     val context = LocalContext.current
     DisposableEffect(Unit) {
-        val activity = cont
+        val activity = context.findActivity() ?: return@DisposableEffect onDispose {}
+        val originalOrientation = activity.requestedOrientation
+        activity.requestedOrientation = orientation
+        onDispose { act
