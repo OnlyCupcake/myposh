@@ -52,4 +52,10 @@ fun SetOrientation(orientation: Int) {
         val activity = context.findActivity() ?: return@DisposableEffect onDispose {}
         val originalOrientation = activity.requestedOrientation
         activity.requestedOrientation = orientation
-        onDispose { act
+        onDispose { activity.requestedOrientation = originalOrientation }
+    }
+}
+
+private fun Context.findActivity(): Activity? = when (this) {
+    is Activity -> this
+    is ContextWrapper -> baseContext.
