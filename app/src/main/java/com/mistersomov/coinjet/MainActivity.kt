@@ -58,4 +58,6 @@ fun SetOrientation(orientation: Int) {
 
 private fun Context.findActivity(): Activity? = when (this) {
     is Activity -> this
-    is ContextWrapper -> baseContext.
+    is ContextWrapper -> baseContext.findActivity()
+    else -> null
+}
