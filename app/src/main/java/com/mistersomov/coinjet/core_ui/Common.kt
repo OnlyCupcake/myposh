@@ -19,4 +19,10 @@ data class CoinJetColor(
     val secondaryContainer: Color,
     val onSecondaryContainer: Color,
     val tertiary: Color,
-    val onTertia
+    val onTertiary: Color,
+    val tertiaryContainer: Color,
+    val onTertiaryContainer: Color,
+    val error: Color,
+    val errorContainer: Color,
+    val onError: Color,
+    val onErrorContainer: Col
