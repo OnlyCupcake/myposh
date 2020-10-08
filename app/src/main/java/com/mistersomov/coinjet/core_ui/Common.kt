@@ -12,4 +12,11 @@ import com.mistersomov.coinjet.R
 data class CoinJetColor(
     val primary: Color,
     val onPrimary: Color,
-    val primaryContainer: C
+    val primaryContainer: Color,
+    val onPrimaryContainer: Color,
+    val secondary: Color,
+    val onSecondary: Color,
+    val secondaryContainer: Color,
+    val onSecondaryContainer: Color,
+    val tertiary: Color,
+    val onTertia
