@@ -25,4 +25,11 @@ data class CoinJetColor(
     val error: Color,
     val errorContainer: Color,
     val onError: Color,
-    val onErrorContainer: Col
+    val onErrorContainer: Color,
+    val background: Color,
+    val onBackground: Color,
+    val surface: Color,
+    val onSurface: Color,
+    val surfaceVariant: Color,
+    val onSurfaceVariant: Color,
+ 
