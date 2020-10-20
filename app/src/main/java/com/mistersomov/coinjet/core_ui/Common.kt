@@ -41,4 +41,10 @@ data class CoinJetColor(
     val onGreen: Color,
 )
 
-val Inte
+val Inter = FontFamily(
+    Font(R.font.inter_bold, FontWeight.Bold),
+    Font(R.font.inter_regular, FontWeight.Normal),
+    Font(R.font.inter_semibold, FontWeight.SemiBold)
+)
+
+data class CoinJetTypogr
