@@ -47,4 +47,10 @@ val Inter = FontFamily(
     Font(R.font.inter_semibold, FontWeight.SemiBold)
 )
 
-data class CoinJetTypogr
+data class CoinJetTypography(
+    val labelLarge: TextStyle,
+    val labelMedium: TextStyle,
+    val labelSmall: TextStyle,
+    val bodyLarge: TextStyle,
+    val bodyMedium: TextStyle,
+    
