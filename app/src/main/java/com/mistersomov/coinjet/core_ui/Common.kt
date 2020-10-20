@@ -32,4 +32,13 @@ data class CoinJetColor(
     val onSurface: Color,
     val surfaceVariant: Color,
     val onSurfaceVariant: Color,
- 
+    val outline: Color,
+    val shadow: Color,
+    val surfaceTint: Color,
+    val surfaceTintColor: Color,
+    val yellow: Color,
+    val green: Color,
+    val onGreen: Color,
+)
+
+val Inte
