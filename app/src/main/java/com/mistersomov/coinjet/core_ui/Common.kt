@@ -53,4 +53,9 @@ data class CoinJetTypography(
     val labelSmall: TextStyle,
     val bodyLarge: TextStyle,
     val bodyMedium: TextStyle,
-    
+    val bodySmall: TextStyle,
+    val headlineLarge: TextStyle,
+    val headlineMedium: TextStyle,
+    val headlineSmall: TextStyle,
+    val displayLarge: TextStyle,
+    val displayMed
