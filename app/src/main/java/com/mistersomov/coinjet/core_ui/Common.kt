@@ -58,4 +58,12 @@ data class CoinJetTypography(
     val headlineMedium: TextStyle,
     val headlineSmall: TextStyle,
     val displayLarge: TextStyle,
-    val displayMed
+    val displayMedium: TextStyle,
+    val displaySmall: TextStyle,
+    val titleLarge: TextStyle,
+    val titleMedium: TextStyle,
+    val titleSmall: TextStyle,
+)
+
+object CoinJetTheme {
+    val colors: Co
