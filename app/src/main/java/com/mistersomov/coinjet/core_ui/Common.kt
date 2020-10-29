@@ -66,4 +66,12 @@ data class CoinJetTypography(
 )
 
 object CoinJetTheme {
-    val colors: Co
+    val colors: CoinJetColor
+        @Composable
+        get() = LocalCoinJetColor.current
+    val typography: CoinJetTypography
+        @Composable
+        get() = LocalCoinJetTypography.current
+}
+
+val Loc
