@@ -74,4 +74,9 @@ object CoinJetTheme {
         get() = LocalCoinJetTypography.current
 }
 
-val Loc
+val LocalCoinJetColor = staticCompositionLocalOf<CoinJetColor> {
+    error(R.string.error_colors_provided)
+}
+
+val LocalCoinJetTypography =
+    staticCompositionLocalOf<CoinJetTypography> { erro
