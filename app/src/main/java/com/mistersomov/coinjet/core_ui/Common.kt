@@ -79,4 +79,4 @@ val LocalCoinJetColor = staticCompositionLocalOf<CoinJetColor> {
 }
 
 val LocalCoinJetTypography =
-    staticCompositionLocalOf<CoinJetTypography> { erro
+    staticCompositionLocalOf<CoinJetTypography> { error(R.string.error_typography_provided) }
