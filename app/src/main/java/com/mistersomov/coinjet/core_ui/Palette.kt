@@ -30,4 +30,13 @@ val baseLightPalette = CoinJetColor(
     surfaceTint = Color(0xFF303034),
     surfaceTintColor = Color(0xFFB2C5FF),
     yellow = Color(0xFFFFAA04),
-    green = Color(0x
+    green = Color(0xFF8EF2CE),
+    onGreen = Color(0xFF00935D),
+
+)
+
+val baseDarkPalette = CoinJetColor(
+    primary = Color(0xFFB2C5FF),
+    onPrimary = Color(0xFF002B73),
+    primaryContainer = Color(0xFF1F428F),
+    onPrimaryContainer = Color(0xFFDA
