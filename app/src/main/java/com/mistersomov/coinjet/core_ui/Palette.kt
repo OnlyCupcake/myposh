@@ -21,4 +21,8 @@ val baseLightPalette = CoinJetColor(
     onErrorContainer = Color(0xFF410002),
     background = Color(0xFFFEFBFF),
     onBackground = Color(0xFF1B1B1F),
-    surfac
+    surface = Color(0xFFFEFBFF),
+    onSurface = Color(0xFF1B1B1F),
+    surfaceVariant = Color(0xFFE1E2EC),
+    onSurfaceVariant = Color(0xFF45464F),
+    outline = Color(0xFF75
