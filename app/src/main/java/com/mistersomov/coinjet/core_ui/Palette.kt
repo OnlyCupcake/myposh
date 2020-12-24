@@ -62,4 +62,7 @@ val baseDarkPalette = CoinJetColor(
     shadow = Color(0xFF1B1B1F),
     surfaceTint = Color(0xFFE4E2E6),
     surfaceTintColor = Color(0xFF3B5BA9),
-    yellow
+    yellow = Color(0xFFFFC149),
+    green = Color(0xFFDEF2ED),
+    onGreen = Color(0xFF2C6B54),
+)
