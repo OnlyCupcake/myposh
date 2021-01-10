@@ -12,3 +12,10 @@ fun MainTheme(
 ) {
     val colors = when (isDarkTheme) {
         true -> baseDarkPalette
+        else -> baseLightPalette
+    }
+    val typography = CoinJetTypography(
+        labelLarge = TextStyle(
+            fontFamily = Inter,
+            fontWeight = FontWeight.Medium,
+  
