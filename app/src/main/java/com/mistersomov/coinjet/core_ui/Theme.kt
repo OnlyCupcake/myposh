@@ -23,4 +23,9 @@ fun MainTheme(
             fontSize = 14.sp
         ),
         labelMedium = TextStyle(
-            fontFamily =
+            fontFamily = Inter,
+            fontWeight = FontWeight.Medium,
+            letterSpacing = 0.10000000149011612.sp,
+            lineHeight = 16.sp,
+            fontSize = 12.sp
+        ),
