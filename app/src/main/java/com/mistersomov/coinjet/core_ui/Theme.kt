@@ -50,4 +50,8 @@ fun MainTheme(
             lineHeight = 20.sp,
             fontSize = 14.sp
         ),
-    
+        bodySmall = TextStyle(
+            fontFamily = Inter,
+            fontWeight = FontWeight.Medium,
+            letterSpacing = 0.10000000149011612.sp,
+            lineH
