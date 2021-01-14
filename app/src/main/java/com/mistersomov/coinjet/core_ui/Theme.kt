@@ -45,4 +45,9 @@ fun MainTheme(
         ),
         bodyMedium = TextStyle(
             fontFamily = Inter,
-            
+            fontWeight = FontWeight.Normal,
+            letterSpacing = 0.sp,
+            lineHeight = 20.sp,
+            fontSize = 14.sp
+        ),
+    
