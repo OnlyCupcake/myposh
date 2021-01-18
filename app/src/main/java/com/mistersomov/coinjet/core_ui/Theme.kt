@@ -65,4 +65,9 @@ fun MainTheme(
             fontSize = 32.sp
         ),
         headlineMedium = TextStyle(
-            fontFamily =
+            fontFamily = Inter,
+            fontWeight = FontWeight.Normal,
+            letterSpacing = 0.sp,
+            lineHeight = 36.sp,
+            fontSize = 28.sp
+        ),
