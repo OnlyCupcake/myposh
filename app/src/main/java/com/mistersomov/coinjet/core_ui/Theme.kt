@@ -109,4 +109,10 @@ fun MainTheme(
         titleMedium = TextStyle(
             fontFamily = Inter,
             fontWeight = FontWeight.SemiBold,
-          
+            letterSpacing = 0.sp,
+            lineHeight = 24.sp,
+            fontSize = 16.sp
+        ),
+        titleSmall = TextStyle(
+            fontFamily = Inter,
+            fontWeight = FontW
