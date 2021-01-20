@@ -97,4 +97,10 @@ fun MainTheme(
             fontWeight = FontWeight.Normal,
             letterSpacing = 0.sp,
             lineHeight = 44.sp,
+            fontSize = 36.sp
+        ),
+        titleLarge = TextStyle(
+            fontFamily = Inter,
+            fontWeight = FontWeight.Normal,
+            letterSpacing = 0.sp,
        
