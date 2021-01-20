@@ -87,3 +87,9 @@ fun MainTheme(
         ),
         displayMedium = TextStyle(
             fontFamily = Inter,
+            fontWeight = FontWeight.Normal,
+            letterSpacing = 0.sp,
+            lineHeight = 52.sp,
+            fontSize = 45.sp
+        ),
+        display
