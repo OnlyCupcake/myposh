@@ -115,4 +115,12 @@ fun MainTheme(
         ),
         titleSmall = TextStyle(
             fontFamily = Inter,
-            fontWeight = FontW
+            fontWeight = FontWeight.Medium,
+            letterSpacing = 0.sp,
+            lineHeight = 20.sp,
+            fontSize = 14.sp
+        ),
+    )
+
+    CompositionLocalProvider(
+ 
