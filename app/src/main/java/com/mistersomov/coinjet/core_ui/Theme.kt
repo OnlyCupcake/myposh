@@ -123,4 +123,8 @@ fun MainTheme(
     )
 
     CompositionLocalProvider(
- 
+        LocalCoinJetColor provides colors,
+        LocalCoinJetTypography provides typography,
+        content = content
+    )
+}
