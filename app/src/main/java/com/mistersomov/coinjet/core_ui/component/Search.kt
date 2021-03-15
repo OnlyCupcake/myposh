@@ -162,3 +162,7 @@ fun PreviewSearch() {
             onFocusChanged = {},
             onValueChanged = {},
             onCancelClicked = {},
+            onRemoveQuery = { }
+        )
+    }
+}
