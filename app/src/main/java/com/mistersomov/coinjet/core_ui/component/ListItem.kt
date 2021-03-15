@@ -57,3 +57,18 @@ fun ListItem(
             content.invoke()
         }
     }
+}
+
+@Preview(showBackground = true, name = "ListItem")
+@Composable
+fun PreviewListItem() {
+    MainTheme {
+        ListItem(isFavorite = remember {
+            mutableStateOf(true)
+        },
+            content = {
+
+            }
+        ) {}
+    }
+}
