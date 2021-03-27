@@ -8,4 +8,9 @@ import com.mistersomov.coinjet.core_ui.CoinJetTheme
 
 @Composable
 fun animateDigitColor(digit: Double, initialColor: Color): Color {
-    val prev
+    val previousDigit by remember { mutableStateOf(digit) }
+    val targetColor = if (digit == previousDigit) {
+        initialColor
+    } else if (digit > previousDigit) {
+        CoinJetTheme.colors.onGreen
+    } else 
