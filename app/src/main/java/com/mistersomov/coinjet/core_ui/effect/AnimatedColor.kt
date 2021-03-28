@@ -13,4 +13,10 @@ fun animateDigitColor(digit: Double, initialColor: Color): Color {
         initialColor
     } else if (digit > previousDigit) {
         CoinJetTheme.colors.onGreen
-    } else 
+    } else {
+        CoinJetTheme.colors.error
+    }
+    val priceColor = remember { Animatable(initialColor) }
+    val duration = 2000
+
+    LaunchedEffect(key1 = dig
