@@ -24,4 +24,5 @@ fun animateDigitColor(digit: Double, initialColor: Color): Color {
         priceColor.animateTo(initialColor, tween(durationMillis = duration))
     })
 
-    ret
+    return priceColor.value
+}
