@@ -19,4 +19,9 @@ fun animateDigitColor(digit: Double, initialColor: Color): Color {
     val priceColor = remember { Animatable(initialColor) }
     val duration = 2000
 
-    LaunchedEffect(key1 = dig
+    LaunchedEffect(key1 = digit, block = {
+        priceColor.animateTo(targetColor, tween(durationMillis = duration))
+        priceColor.animateTo(initialColor, tween(durationMillis = duration))
+    })
+
+    ret
