@@ -14,4 +14,13 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.unit
+import androidx.compose.ui.unit.Dp
+import com.mistersomov.coinjet.core_ui.CoinJetTheme
+
+@Composable
+fun Shimmer(
+    containerHeight: Dp,
+) {
+
+    BoxWithConstraints {
+        val widthWithPx = w
