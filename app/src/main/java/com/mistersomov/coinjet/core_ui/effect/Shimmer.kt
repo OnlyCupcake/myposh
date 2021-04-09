@@ -28,4 +28,6 @@ fun Shimmer(
 
         val gradientWidth: Float = 0.2f * heightWithPx
 
-      
+        val infiniteTransition = rememberInfiniteTransition()
+        val xShimmer by infiniteTransition.animateFloat(
+            initialValue = 0f - grad
