@@ -23,4 +23,9 @@ fun Shimmer(
 ) {
 
     BoxWithConstraints {
-        val widthWithPx = w
+        val widthWithPx = with(LocalDensity.current) { maxWidth.toPx() }
+        val heightWithPx = with(LocalDensity.current) { containerHeight.toPx() }
+
+        val gradientWidth: Float = 0.2f * heightWithPx
+
+      
