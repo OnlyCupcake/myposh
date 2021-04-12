@@ -38,4 +38,7 @@ fun Shimmer(
             )
         )
         val yShimmer by infiniteTransition.animateFloat(
-            initialV
+            initialValue = 0f - gradientWidth,
+            targetValue = heightWithPx + gradientWidth,
+            animationSpec = infiniteRepeatable(
+                tween(durationMillis = 2000, delayMil
