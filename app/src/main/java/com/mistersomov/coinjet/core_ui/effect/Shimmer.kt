@@ -33,4 +33,9 @@ fun Shimmer(
             initialValue = 0f - gradientWidth,
             targetValue = widthWithPx + gradientWidth,
             animationSpec = infiniteRepeatable(
-                tween(durationMillis = 2000, delayMil
+                tween(durationMillis = 2000, delayMillis = 500, easing = LinearEasing),
+                repeatMode = RepeatMode.Restart
+            )
+        )
+        val yShimmer by infiniteTransition.animateFloat(
+            initialV
