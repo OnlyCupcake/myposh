@@ -46,4 +46,9 @@ fun Shimmer(
             )
         )
         val colorList: List<Color> = with(CoinJetTheme.colors) {
-  
+            listOf(surfaceVariant, surface, surfaceVariant)
+        }
+
+        val brush = Brush.linearGradient(
+            colors = colorList,
+            start = Offs
