@@ -1,3 +1,6 @@
 package com.mistersomov.coinjet.core_ui.effect
 
-import a
+import android.annotation.SuppressLint
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.*
