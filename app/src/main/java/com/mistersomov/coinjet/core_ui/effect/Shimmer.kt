@@ -62,4 +62,9 @@ fun Shimmer(
             Spacer(
                 modifier = Modifier
                     .requiredWidth(width = maxWidth)
-                    .req
+                    .requiredHeight(height = containerHeight)
+                    .background(brush = brush)
+            )
+        }
+    }
+}
