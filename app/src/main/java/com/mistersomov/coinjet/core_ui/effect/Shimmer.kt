@@ -51,4 +51,11 @@ fun Shimmer(
 
         val brush = Brush.linearGradient(
             colors = colorList,
-            start = Offs
+            start = Offset(x = xShimmer, y = yShimmer),
+            end = Offset(
+                x = xShimmer + gradientWidth,
+                y = yShimmer + gradientWidth
+            )
+        )
+
+ 
