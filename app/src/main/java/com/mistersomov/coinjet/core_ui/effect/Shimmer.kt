@@ -58,4 +58,8 @@ fun Shimmer(
             )
         )
 
- 
+        Surface {
+            Spacer(
+                modifier = Modifier
+                    .requiredWidth(width = maxWidth)
+                    .req
