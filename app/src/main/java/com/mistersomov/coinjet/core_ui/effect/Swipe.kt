@@ -11,4 +11,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
-import androidx.compose.ui.unit.
+import androidx.compose.ui.unit.dp
+import com.mistersomov.coinjet.R
+import com.mistersomov.coinjet.core_ui.CoinJetTheme
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.launch
+
+@SuppressLint("CoroutineCreationDur
