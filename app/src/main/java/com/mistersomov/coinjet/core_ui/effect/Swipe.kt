@@ -23,4 +23,10 @@ import kotlinx.coroutines.launch
 fun Swipe(
     modifier: Modifier = Modifier,
     scope: CoroutineScope = rememberCoroutineScope(),
-    content: @Composable () -> Uni
+    content: @Composable () -> Unit
+) {
+    val dismissState = rememberDismissState(confirmStateChange = { true })
+    val maxOffset = 0.5f
+
+    if (dismissState.offset.value >= maxOffset) {
+        sco
