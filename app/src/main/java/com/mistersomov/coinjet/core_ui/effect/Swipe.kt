@@ -17,4 +17,10 @@ import com.mistersomov.coinjet.core_ui.CoinJetTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
-@SuppressLint("CoroutineCreationDur
+@SuppressLint("CoroutineCreationDuringComposition")
+@OptIn(ExperimentalMaterialApi::class)
+@Composable
+fun Swipe(
+    modifier: Modifier = Modifier,
+    scope: CoroutineScope = rememberCoroutineScope(),
+    content: @Composable () -> Uni
