@@ -29,4 +29,10 @@ fun Swipe(
     val maxOffset = 0.5f
 
     if (dismissState.offset.value >= maxOffset) {
-        sco
+        scope.launch {
+            dismissState.reset()
+        }
+    }
+
+    SwipeToDismiss(state = dismissState, background = {
+        val direction = dismissState.dismissDirecti
