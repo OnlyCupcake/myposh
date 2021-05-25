@@ -42,4 +42,8 @@ fun Swipe(
         val arrangement: Arrangement.Horizontal
         val tint: Color
 
-        when (d
+        when (direction) {
+            DismissDirection.StartToEnd -> {
+                iconId = R.drawable.favorite
+                alignment = Alignment.CenterStart
+                arrangement = Ar
