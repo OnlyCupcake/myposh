@@ -35,4 +35,11 @@ fun Swipe(
     }
 
     SwipeToDismiss(state = dismissState, background = {
-        val direction = dismissState.dismissDirecti
+        val direction = dismissState.dismissDirection ?: return@SwipeToDismiss
+
+        val iconId: Int
+        val alignment: Alignment
+        val arrangement: Arrangement.Horizontal
+        val tint: Color
+
+        when (d
