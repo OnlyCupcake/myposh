@@ -46,4 +46,9 @@ fun Swipe(
             DismissDirection.StartToEnd -> {
                 iconId = R.drawable.favorite
                 alignment = Alignment.CenterStart
-                arrangement = Ar
+                arrangement = Arrangement.Start
+                tint = CoinJetTheme.colors.yellow
+            }
+            DismissDirection.EndToStart -> {
+                iconId = R.drawable.trash
+ 
