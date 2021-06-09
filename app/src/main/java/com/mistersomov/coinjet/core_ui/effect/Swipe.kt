@@ -55,3 +55,9 @@ fun Swipe(
                 arrangement = Arrangement.End
                 tint = CoinJetTheme.colors.onSurfaceVariant
             }
+        }
+
+        Box(
+            modifier = modifier
+                .background(color = CoinJetTheme.colors.surface)
+                .fillMaxSize()
