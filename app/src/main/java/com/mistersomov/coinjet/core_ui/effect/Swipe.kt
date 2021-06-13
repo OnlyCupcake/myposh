@@ -61,3 +61,9 @@ fun Swipe(
             modifier = modifier
                 .background(color = CoinJetTheme.colors.surface)
                 .fillMaxSize()
+                //.padding(start = (2 * padding.start).dp, end = (2 * padding.end).dp)
+            ,
+            contentAlignment = alignment
+        ) {
+            Row(
+                modifi
