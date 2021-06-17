@@ -66,4 +66,6 @@ fun Swipe(
             contentAlignment = alignment
         ) {
             Row(
-                modifi
+                modifier = Modifier.padding(horizontal = 6.dp),
+                horizontalArrangement = arrangement,
+                verticalAlignment = Alignment.Cente
