@@ -68,4 +68,8 @@ fun Swipe(
             Row(
                 modifier = Modifier.padding(horizontal = 6.dp),
                 horizontalArrangement = arrangement,
-                verticalAlignment = Alignment.Cente
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(
+                    modifier = Modifier.size(18.dp),
+                    imageVector = ImageVector.vectorResource(id = 
