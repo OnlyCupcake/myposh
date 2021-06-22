@@ -72,4 +72,11 @@ fun Swipe(
             ) {
                 Icon(
                     modifier = Modifier.size(18.dp),
-                    imageVector = ImageVector.vectorResource(id = 
+                    imageVector = ImageVector.vectorResource(id = iconId),
+                    contentDescription = null,
+                    tint = tint
+                )
+            }
+        }
+    },
+        directions = setOf(DismissD
