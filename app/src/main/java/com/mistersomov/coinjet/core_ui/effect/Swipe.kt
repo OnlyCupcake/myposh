@@ -79,4 +79,7 @@ fun Swipe(
             }
         }
     },
-        directions = setOf(DismissD
+        directions = setOf(DismissDirection.StartToEnd, DismissDirection.EndToStart),
+        dismissContent = { content.invoke() }
+    )
+}
