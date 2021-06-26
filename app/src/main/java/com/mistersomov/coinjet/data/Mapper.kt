@@ -78,3 +78,90 @@ fun mapResponseToCoinList(quoteList: List<QuoteDto>, coinListDto: CoinListDto): 
         )
         result.add(coinEntity)
     }
+
+    return result
+}
+
+fun Coin.toCoinEntity(): CoinEntity = with(this) {
+    CoinEntity(
+        id = id,
+        symbol = symbol,
+        fullName = fullName,
+        fromSymbol = fromSymbol,
+        toSymbol = toSymbol,
+        price = price,
+        lastUpdate = lastUpdate,
+        volume24Hour = volume24Hour,
+        volume24hourTo = volume24hourTo,
+        mktCap = mktCap,
+        open24Hour = open24Hour,
+        high24Hour = high24Hour,
+        low24Hour = low24Hour,
+        changePct24Hour = changePct24Hour,
+        changePctHour = changePctHour,
+        imageUrl = imageUrl,
+    )
+}
+
+fun CoinEntity.toCoin(): Coin = with(this) {
+    Coin(
+        id = id,
+        symbol = symbol,
+        fullName = fullName,
+        fromSymbol = fromSymbol,
+        toSymbol = toSymbol,
+        price = price,
+        lastUpdate = lastUpdate,
+        volume24Hour = volume24Hour,
+        volume24hourTo = volume24hourTo,
+        mktCap = mktCap,
+        open24Hour = open24Hour,
+        high24Hour = high24Hour,
+        low24Hour = low24Hour,
+        changePct24Hour = changePct24Hour,
+        changePctHour = changePctHour,
+        imageUrl = imageUrl,
+    )
+}
+
+fun Coin.toSearchCoinEntity(): SearchCoinEntity = with(this) {
+    SearchCoinEntity(
+        id = id,
+        symbol = symbol,
+        fullName = fullName,
+        fromSymbol = fromSymbol,
+        toSymbol = toSymbol,
+        price = price,
+        lastUpdate = lastUpdate,
+        volume24Hour = volume24Hour,
+        volume24hourTo = volume24hourTo,
+        mktCap = mktCap,
+        open24Hour = open24Hour,
+        high24Hour = high24Hour,
+        low24Hour = low24Hour,
+        changePct24Hour = changePct24Hour,
+        changePctHour = changePctHour,
+        imageUrl = imageUrl,
+    )
+}
+
+fun SearchCoinEntity.toCoin(): Coin = with(this) {
+    Coin(
+        id = id,
+        symbol = symbol,
+        fullName = fullName,
+        fromSymbol = fromSymbol,
+        toSymbol = toSymbol,
+        price = price,
+        lastUpdate = lastUpdate,
+        volume24Hour = volume24Hour,
+        volume24hourTo = volume24hourTo,
+        mktCap = mktCap,
+        open24Hour = open24Hour,
+        high24Hour = high24Hour,
+        low24Hour = low24Hour,
+        changePct24Hour = changePct24Hour,
+        changePctHour = changePctHour,
+        imageUrl = imageUrl,
+    )
+}
