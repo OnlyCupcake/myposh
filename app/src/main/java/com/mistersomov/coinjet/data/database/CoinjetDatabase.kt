@@ -10,4 +10,9 @@ import com.mistersomov.coinjet.data.database.entity.SearchCoinEntity
     entities = [CoinEntity::class, SearchCoinEntity::class],
     version = 1,
 )
-abstract class CoinjetDatabas
+abstract class CoinjetDatabase : RoomDatabase() {
+
+    abstract fun coinDao(): CoinDao
+
+    abstract fun searchDao(): SearchCoinDao
+}
