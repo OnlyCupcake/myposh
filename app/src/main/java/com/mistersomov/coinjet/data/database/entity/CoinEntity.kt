@@ -17,4 +17,12 @@ data class CoinEntity(
     val volume24hourTo: Double,
     val open24Hour: Double,
     val high24Hour: Double,
-    val low24Hour
+    val low24Hour: Double,
+    val changePct24Hour: Double,
+    val changePctHour: Double,
+    val mktCap: Double,
+    val imageUrl: String,
+) {
+
+    companion object {
+        const v
