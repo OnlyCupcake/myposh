@@ -11,4 +11,10 @@ data class CoinEntity(
     val fullName: String,
     val fromSymbol: String,
     val toSymbol: String,
-    val 
+    val price: Double,
+    val lastUpdate: String,
+    val volume24Hour: Double,
+    val volume24hourTo: Double,
+    val open24Hour: Double,
+    val high24Hour: Double,
+    val low24Hour
