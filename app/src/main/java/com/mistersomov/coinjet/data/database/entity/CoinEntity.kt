@@ -25,4 +25,6 @@ data class CoinEntity(
 ) {
 
     companion object {
-        const v
+        const val TABLE_COIN_NAME = "coin_entity"
+    }
+}
