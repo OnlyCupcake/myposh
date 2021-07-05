@@ -15,4 +15,9 @@ data class SearchCoinEntity(
     val lastUpdate: String,
     val volume24Hour: Double,
     val volume24hourTo: Double,
-    val ope
+    val open24Hour: Double,
+    val high24Hour: Double,
+    val low24Hour: Double,
+    val changePct24Hour: Double,
+    val changePctHour: Double,
+    val mktCap: Doubl
