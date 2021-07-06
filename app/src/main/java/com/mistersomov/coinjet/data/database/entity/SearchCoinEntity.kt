@@ -20,4 +20,11 @@ data class SearchCoinEntity(
     val low24Hour: Double,
     val changePct24Hour: Double,
     val changePctHour: Double,
-    val mktCap: Doubl
+    val mktCap: Double,
+    val imageUrl: String,
+) {
+
+    companion object {
+        const val TABLE_SEARCH_COIN_NAME = "search_coin_entity"
+    }
+}
