@@ -21,3 +21,30 @@ class LocalDataSourceImpl @Inject constructor(
         withContext(ioDispatcher) {
             coinDao.insertAll(coinList)
         }
+    }
+
+    override suspend fun getCoinListFromCache(): List<CoinEntity> {
+        return withContext(ioDispatcher) {
+            coinDao.getAll()
+        }
+    }
+
+    override fun getCoinBySymbol(symbol: String): Flow<CoinEntity> {
+        return coinDao.getBySymbol(symbol).flowOn(ioDispatcher)
+    }
+
+    override suspend fun deleteCoinListFromCache() = withContext(ioDispatcher) {
+        coinDao.deleteAll()
+    }
+
+    override suspend fun saveSearchCoinToCache(coin: SearchCoinEntity) = withContext(ioDispatcher) {
+        searchCoinDao.insertByEntity(coin)
+    }
+
+    override fun getRecentSearchList(): Flow<List<SearchCoinEntity>> =
+        searchCoinDao.getAll().flowOn(ioDispatcher)
+
+    override suspend fun clearSearchList() = withContext(ioDispatcher) {
+        searchCoinDao.deleteAll()
+    }
+}
