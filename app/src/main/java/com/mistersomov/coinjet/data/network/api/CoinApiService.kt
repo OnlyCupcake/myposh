@@ -15,4 +15,6 @@ interface CoinApiService {
 
     @GET(ENDPOINT_QUOTE_LIST)
     suspend fun getQuoteList(
-  
+        @Query(QUERY_PARAM_FROM_SYMBOLS) fromSymbols: String,
+        @Query(QUERY_PARAM_TO_SYMBOLS) toSymbols: String = QUERY_PARAM_TO_SYMBOL_DEFAULT,
+        @Query(QUERY_PARAM_RELAXE
