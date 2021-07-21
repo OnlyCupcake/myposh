@@ -9,4 +9,10 @@ interface CoinApiService {
 
     @GET(ENDPOINT_COIN_LIST)
     suspend fun getTopCoinList(
-        @Query(QUERY_PARAM_LIMIT) limit: Int = QUERY_PARAM_LIMI
+        @Query(QUERY_PARAM_LIMIT) limit: Int = QUERY_PARAM_LIMIT_DEFAULT,
+        @Query(QUERY_PARAM_TO_SYMBOL) toSymbol: String = QUERY_PARAM_TO_SYMBOL_DEFAULT,
+    ): CoinListDto
+
+    @GET(ENDPOINT_QUOTE_LIST)
+    suspend fun getQuoteList(
+  
