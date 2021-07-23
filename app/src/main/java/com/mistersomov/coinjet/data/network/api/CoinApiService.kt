@@ -22,4 +22,8 @@ interface CoinApiService {
 
     companion object {
         //Endpoints
-        private const val ENDPOINT_COIN_LIST = "/data/top/totalvo
+        private const val ENDPOINT_COIN_LIST = "/data/top/totalvolfull"
+        private const val ENDPOINT_QUOTE_LIST = "/data/pricemultifull"
+        //Query params
+        private const val QUERY_PARAM_LIMIT = "limit"
+        private const val QUERY_
