@@ -17,4 +17,9 @@ interface CoinApiService {
     suspend fun getQuoteList(
         @Query(QUERY_PARAM_FROM_SYMBOLS) fromSymbols: String,
         @Query(QUERY_PARAM_TO_SYMBOLS) toSymbols: String = QUERY_PARAM_TO_SYMBOL_DEFAULT,
-        @Query(QUERY_PARAM_RELAXE
+        @Query(QUERY_PARAM_RELAXED_VALIDATION) relaxed: Boolean = true,
+    ): QuoteJsonContainerDto
+
+    companion object {
+        //Endpoints
+        private const val ENDPOINT_COIN_LIST = "/data/top/totalvo
