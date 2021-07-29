@@ -26,4 +26,7 @@ interface CoinApiService {
         private const val ENDPOINT_QUOTE_LIST = "/data/pricemultifull"
         //Query params
         private const val QUERY_PARAM_LIMIT = "limit"
-        private const val QUERY_
+        private const val QUERY_PARAM_LIMIT_DEFAULT = 100
+        private const val QUERY_PARAM_TO_SYMBOL = "tsym"
+        private const val QUERY_PARAM_FROM_SYMBOLS = "fsyms"
+        private const val QUERY_PARAM
