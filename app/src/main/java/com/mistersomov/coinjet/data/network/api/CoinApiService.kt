@@ -29,4 +29,8 @@ interface CoinApiService {
         private const val QUERY_PARAM_LIMIT_DEFAULT = 100
         private const val QUERY_PARAM_TO_SYMBOL = "tsym"
         private const val QUERY_PARAM_FROM_SYMBOLS = "fsyms"
-        private const val QUERY_PARAM
+        private const val QUERY_PARAM_TO_SYMBOLS = "tsyms"
+        private const val QUERY_PARAM_TO_SYMBOL_DEFAULT = "USDT"
+        private const val QUERY_PARAM_RELAXED_VALIDATION = "relaxedValidation"
+    }
+}
