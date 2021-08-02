@@ -4,4 +4,14 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 data class CoinDto(
-    @SerializedName(
+    @SerializedName("Id")
+    @Expose
+    val id: String? = null,
+
+    @SerializedName("Name")
+    @Expose
+    val symbol: String? = null,
+
+    @SerializedName("FullName")
+    @Expose
+    val ful
