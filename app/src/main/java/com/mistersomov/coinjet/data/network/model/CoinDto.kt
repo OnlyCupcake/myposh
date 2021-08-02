@@ -14,4 +14,9 @@ data class CoinDto(
 
     @SerializedName("FullName")
     @Expose
-    val ful
+    val fullName: String? = null,
+
+    @SerializedName("ImageUrl")
+    @Expose
+    val imageUrl: String? = null,
+)
