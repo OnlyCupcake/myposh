@@ -3,4 +3,13 @@ package com.mistersomov.coinjet.data.network.model
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-da
+data class QuoteDto(
+    @SerializedName("FROMSYMBOL")
+    @Expose
+    val fromSymbol: String? = null,
+
+    @SerializedName("TOSYMBOL")
+    @Expose
+    val toSymbol: String? = null,
+
+  
