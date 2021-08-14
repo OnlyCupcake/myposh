@@ -12,4 +12,13 @@ data class QuoteDto(
     @Expose
     val toSymbol: String? = null,
 
+    @SerializedName("PRICE")
+    @Expose
+    val price: Double? = null,
+
+    @SerializedName("LASTUPDATE")
+    @Expose
+    val lastUpdate: Long? = null,
+
+    @SerializedName("VOLUME24HOUR")
   
