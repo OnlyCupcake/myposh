@@ -21,4 +21,11 @@ data class QuoteDto(
     val lastUpdate: Long? = null,
 
     @SerializedName("VOLUME24HOUR")
-  
+    @Expose
+    val volume24hour: Double? = null,
+
+    @SerializedName("VOLUME24HOURTO")
+    @Expose
+    val volume24hourto: Double? = null,
+
+    @SerializedName("MKTC
