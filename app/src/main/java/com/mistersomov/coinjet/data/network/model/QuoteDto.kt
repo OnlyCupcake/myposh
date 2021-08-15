@@ -28,4 +28,14 @@ data class QuoteDto(
     @Expose
     val volume24hourto: Double? = null,
 
-    @SerializedName("MKTC
+    @SerializedName("MKTCAP")
+    @Expose
+    val mktCap: Double? = null,
+
+    @SerializedName("OPEN24HOUR")
+    @Expose
+    val open24hour: Double? = null,
+
+    @SerializedName("HIGH24HOUR")
+    @Expose
+    val high24hour: Do
