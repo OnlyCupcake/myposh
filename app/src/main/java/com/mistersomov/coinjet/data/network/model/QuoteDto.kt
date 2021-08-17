@@ -38,4 +38,12 @@ data class QuoteDto(
 
     @SerializedName("HIGH24HOUR")
     @Expose
-    val high24hour: Do
+    val high24hour: Double? = null,
+
+    @SerializedName("LOW24HOUR")
+    @Expose
+    val low24hour: Double? = null,
+
+    @SerializedName("CHANGEPCT24HOUR")
+    @Expose
+    val changepct24ho
