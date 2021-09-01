@@ -17,3 +17,7 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 class CoinRepositoryImpl @Inject constructor(
+    private val remoteDataSource: RemoteDataSource,
+    private val localDataSource: LocalDataSource,
+    @DefaultDispatcher private val defaultDispatcher: CoroutineDispatcher,
+) : C
