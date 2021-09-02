@@ -20,4 +20,8 @@ class CoinRepositoryImpl @Inject constructor(
     private val remoteDataSource: RemoteDataSource,
     private val localDataSource: LocalDataSource,
     @DefaultDispatcher private val defaultDispatcher: CoroutineDispatcher,
-) : C
+) : CoinRepository {
+
+    override fun getLatestCoinList(): Flow<List<Coin>> {
+        return remoteDataSource.getLatestCoinList()
+            .onEach { coinList -> saveCoinL
