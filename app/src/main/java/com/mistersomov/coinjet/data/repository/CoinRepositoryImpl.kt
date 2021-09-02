@@ -24,4 +24,9 @@ class CoinRepositoryImpl @Inject constructor(
 
     override fun getLatestCoinList(): Flow<List<Coin>> {
         return remoteDataSource.getLatestCoinList()
-            .onEach { coinList -> saveCoinL
+            .onEach { coinList -> saveCoinListToCache(coinList) }
+            .flowOn(defaultDispatcher)
+    }
+
+    override fun getCoinBySymbol(symbol: String): Flow<Coin> {
+        return localDataSource.getCoin
