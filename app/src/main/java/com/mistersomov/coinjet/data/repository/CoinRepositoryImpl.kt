@@ -35,4 +35,7 @@ class CoinRepositoryImpl @Inject constructor(
     }
 
     override fun getRecentSearchList(): Flow<List<Coin>> {
-        return
+        return localDataSource.getRecentSearchList()
+            .map { entityList ->
+                when {
+                    entityList.isEmpty() -> emptyLis
