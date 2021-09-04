@@ -29,4 +29,10 @@ class CoinRepositoryImpl @Inject constructor(
     }
 
     override fun getCoinBySymbol(symbol: String): Flow<Coin> {
-        return localDataSource.getCoin
+        return localDataSource.getCoinBySymbol(symbol)
+            .map { entity -> entity.toCoin() }
+            .flowOn(defaultDispatcher)
+    }
+
+    override fun getRecentSearchList(): Flow<List<Coin>> {
+        return
