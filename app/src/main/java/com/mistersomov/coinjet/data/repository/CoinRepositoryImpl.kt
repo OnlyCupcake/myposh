@@ -38,4 +38,7 @@ class CoinRepositoryImpl @Inject constructor(
         return localDataSource.getRecentSearchList()
             .map { entityList ->
                 when {
-                    entityList.isEmpty() -> emptyLis
+                    entityList.isEmpty() -> emptyList()
+                    else -> entityList
+                        .distinctBy { it.symbol }
+                        .map { entity -> entity.toCoin()
