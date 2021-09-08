@@ -41,4 +41,11 @@ class CoinRepositoryImpl @Inject constructor(
                     entityList.isEmpty() -> emptyList()
                     else -> entityList
                         .distinctBy { it.symbol }
-                        .map { entity -> entity.toCoin()
+                        .map { entity -> entity.toCoin() }
+                        .sortedByDescending { coin -> coin.mktCap }
+                }
+            }
+            .flowOn(defaultDispatcher)
+    }
+
+    override suspend 
