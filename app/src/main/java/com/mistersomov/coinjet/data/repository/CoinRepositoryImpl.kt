@@ -48,4 +48,7 @@ class CoinRepositoryImpl @Inject constructor(
             .flowOn(defaultDispatcher)
     }
 
-    override suspend 
+    override suspend fun getCoinListByName(name: String): List<Coin> {
+        return withContext(defaultDispatcher) {
+            getCoinListFromCache()
+                .filter { it.fu
