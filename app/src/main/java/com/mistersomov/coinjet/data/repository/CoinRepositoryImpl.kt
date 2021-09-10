@@ -51,4 +51,10 @@ class CoinRepositoryImpl @Inject constructor(
     override suspend fun getCoinListByName(name: String): List<Coin> {
         return withContext(defaultDispatcher) {
             getCoinListFromCache()
-                .filter { it.fu
+                .filter { it.fullName.lowercase().contains(name.lowercase()) }
+                .sortedByDescending { it.mktCap }
+                .distinctBy { it.symbol }
+        }
+    }
+
+    override s
