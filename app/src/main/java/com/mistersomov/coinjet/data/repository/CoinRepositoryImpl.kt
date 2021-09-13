@@ -57,4 +57,7 @@ class CoinRepositoryImpl @Inject constructor(
         }
     }
 
-    override s
+    override suspend fun getCoinListBySymbol(symbol: String): List<Coin> {
+        return withContext(defaultDispatcher) {
+            getCoinListFromCache()
+              
