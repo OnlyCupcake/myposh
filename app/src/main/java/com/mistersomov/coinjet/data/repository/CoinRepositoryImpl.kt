@@ -66,4 +66,7 @@ class CoinRepositoryImpl @Inject constructor(
         }
     }
 
-    override
+    override suspend fun saveSearchCoinToCache(coin: Coin) {
+        withContext(defaultDispatcher) {
+            localDataSource.saveSearchCoinToCache(coin.toSearchCoinEntity())
+   
