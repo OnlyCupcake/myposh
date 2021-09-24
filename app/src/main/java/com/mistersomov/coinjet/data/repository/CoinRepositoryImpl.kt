@@ -60,4 +60,10 @@ class CoinRepositoryImpl @Inject constructor(
     override suspend fun getCoinListBySymbol(symbol: String): List<Coin> {
         return withContext(defaultDispatcher) {
             getCoinListFromCache()
-              
+                .filter { it.symbol.lowercase().contains(symbol.lowercase()) }
+                .sortedByDescending { it.mktCap }
+                .distinctBy { it.symbol }
+        }
+    }
+
+    override
