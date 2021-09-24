@@ -69,4 +69,10 @@ class CoinRepositoryImpl @Inject constructor(
     override suspend fun saveSearchCoinToCache(coin: Coin) {
         withContext(defaultDispatcher) {
             localDataSource.saveSearchCoinToCache(coin.toSearchCoinEntity())
-   
+        }
+    }
+
+    override suspend fun clearSearchList() {
+        withContext(defaultDispatcher) {
+            localDataSource.clearSearchList()
+        }
