@@ -76,3 +76,10 @@ class CoinRepositoryImpl @Inject constructor(
         withContext(defaultDispatcher) {
             localDataSource.clearSearchList()
         }
+    }
+
+    private suspend fun getCoinListFromCache(): List<Coin> {
+        return localDataSource.getCoinListFromCache().map { it.toCoin() }
+    }
+
+    private suspend 
