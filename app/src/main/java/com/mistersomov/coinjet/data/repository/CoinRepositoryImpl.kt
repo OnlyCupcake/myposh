@@ -88,4 +88,7 @@ class CoinRepositoryImpl @Inject constructor(
         }
     }
 
-    private suspend fun saveCoinListToCache(coinList: List<Coin>) 
+    private suspend fun saveCoinListToCache(coinList: List<Coin>) {
+        localDataSource.saveCoinListToCache(coinList.map { coin -> coin.toCoinEntity() })
+    }
+}
