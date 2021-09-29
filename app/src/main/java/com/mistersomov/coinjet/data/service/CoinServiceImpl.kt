@@ -1,3 +1,8 @@
 package com.mistersomov.coinjet.data.service
 
-import com.mistersomov.coinjet.da
+import com.mistersomov.coinjet.data.network.api.CoinApiService
+import retrofit2.Retrofit
+import javax.inject.Inject
+
+class CoinServiceImpl @Inject constructor(
+    private val retrofit: Retrofit,
