@@ -6,3 +6,7 @@ import javax.inject.Inject
 
 class CoinServiceImpl @Inject constructor(
     private val retrofit: Retrofit,
+) : CoinService {
+
+    override fun getService(): CoinApiService = retrofit.create(CoinApiService::class.java)
+}
