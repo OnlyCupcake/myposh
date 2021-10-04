@@ -21,4 +21,7 @@ import javax.inject.Singleton
 object ServiceModule {
     @Singleton
     @Provides
-    fun provideOkkHttp(interceptors: MutableSet<
+    fun provideOkkHttp(interceptors: MutableSet<Interceptor>): OkHttpClient {
+        val interceptorList: ArrayList<Interceptor> = ArrayList(interceptors)
+        return OkHttpClient.Builder()
+            .addInterceptor(inter
