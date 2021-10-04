@@ -24,4 +24,11 @@ object ServiceModule {
     fun provideOkkHttp(interceptors: MutableSet<Interceptor>): OkHttpClient {
         val interceptorList: ArrayList<Interceptor> = ArrayList(interceptors)
         return OkHttpClient.Builder()
-            .addInterceptor(inter
+            .addInterceptor(interceptorList, CoinProtocolInterceptor::class.java)
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .build()
+    }
+
+    @Singleton
+    @Provides
+    fun provideRetro
