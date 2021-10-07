@@ -31,4 +31,7 @@ object ServiceModule {
 
     @Singleton
     @Provides
-    fun provideRetro
+    fun provideRetrofit(client: OkHttpClient): Retrofit = Retrofit.Builder()
+        .addConverterFactory(GsonConverterFactory.create())
+        .client(client)
+        .baseUrl(BuildConfig.bas
