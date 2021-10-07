@@ -34,4 +34,10 @@ object ServiceModule {
     fun provideRetrofit(client: OkHttpClient): Retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
         .client(client)
-        .baseUrl(BuildConfig.bas
+        .baseUrl(BuildConfig.baseUrl)
+        .build()
+
+    @Singleton
+    @Provides
+    fun bindCoinService(retrofit: Retrofit): CoinService = CoinServiceImpl(retrofit)
+}
