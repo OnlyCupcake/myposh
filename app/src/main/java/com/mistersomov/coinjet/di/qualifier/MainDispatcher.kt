@@ -1,3 +1,7 @@
 package com.mistersomov.coinjet.di.qualifier
 
-import javax.inject.Qualif
+import javax.inject.Qualifier
+
+@Retention(AnnotationRetention.BINARY)
+@Qualifier
+annotation class MainDispatcher
