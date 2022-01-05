@@ -8,4 +8,9 @@ import javax.inject.Inject
 
 class ClearSearchListUseCase @Inject constructor(
     private val repository: CoinRepository,
-    @DefaultDispatcher p
+    @DefaultDispatcher private val defaultDispatcher: CoroutineDispatcher,
+) {
+    suspend operator fun invoke() {
+        withContext(defaultDispatcher) {
+            repository.clearSearchList()
+  
