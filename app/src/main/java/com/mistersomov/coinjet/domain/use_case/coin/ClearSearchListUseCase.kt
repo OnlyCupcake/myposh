@@ -13,4 +13,6 @@ class ClearSearchListUseCase @Inject constructor(
     suspend operator fun invoke() {
         withContext(defaultDispatcher) {
             repository.clearSearchList()
-  
+        }
+    }
+}
