@@ -13,4 +13,6 @@ class GetRecentSearchListUseCase @Inject constructor(
     @DefaultDispatcher private val defaultDispatcher: CoroutineDispatcher,
 ) {
     operator fun invoke(): Flow<List<Coin>> {
-        return repository.getRecentSearchList().flowOn(defaultDisp
+        return repository.getRecentSearchList().flowOn(defaultDispatcher)
+    }
+}
