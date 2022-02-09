@@ -10,4 +10,7 @@ import javax.inject.Inject
 
 class GetRecentSearchListUseCase @Inject constructor(
     private val repository: CoinRepository,
-    @DefaultDispatcher pr
+    @DefaultDispatcher private val defaultDispatcher: CoroutineDispatcher,
+) {
+    operator fun invoke(): Flow<List<Coin>> {
+        return repository.getRecentSearchList().flowOn(defaultDisp
