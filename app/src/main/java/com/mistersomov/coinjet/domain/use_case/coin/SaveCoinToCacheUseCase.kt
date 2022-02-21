@@ -5,4 +5,8 @@ import com.mistersomov.coinjet.domain.model.Coin
 import com.mistersomov.coinjet.domain.repository.CoinRepository
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
-import 
+import javax.inject.Inject
+
+class SaveCoinToCacheUseCase @Inject constructor(
+    private val repository: CoinRepository,
+    @DefaultDispatcher private val defaultDispatcher: CoroutineDispatc
