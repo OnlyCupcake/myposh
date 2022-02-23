@@ -16,3 +16,4 @@ class SaveCoinToCacheUseCase @Inject constructor(
             repository.saveSearchCoinToCache(coin)
         }
     }
+}
