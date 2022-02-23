@@ -9,4 +9,10 @@ import javax.inject.Inject
 
 class SaveCoinToCacheUseCase @Inject constructor(
     private val repository: CoinRepository,
-    @DefaultDispatcher private val defaultDispatcher: CoroutineDispatc
+    @DefaultDispatcher private val defaultDispatcher: CoroutineDispatcher,
+) {
+    suspend operator fun invoke(coin: Coin) {
+        withContext(defaultDispatcher) {
+            repository.saveSearchCoinToCache(coin)
+        }
+    }
