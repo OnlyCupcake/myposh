@@ -21,4 +21,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.mistersomov.coinjet.R
-import c
+import com.mistersomov.coinjet.core_ui.CoinJetTheme
+import com.mistersomov.coinjet.core_ui.component.Search
+import com.mistersomov.coinjet.screen.coin.model.*
+import com.mister
