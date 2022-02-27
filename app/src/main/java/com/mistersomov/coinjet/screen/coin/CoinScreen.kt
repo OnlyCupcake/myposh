@@ -24,4 +24,6 @@ import com.mistersomov.coinjet.R
 import com.mistersomov.coinjet.core_ui.CoinJetTheme
 import com.mistersomov.coinjet.core_ui.component.Search
 import com.mistersomov.coinjet.screen.coin.model.*
-import com.mister
+import com.mistersomov.coinjet.screen.coin.view.CoinViewDisplay
+import com.mistersomov.coinjet.screen.coin.view.CoinViewLoading
+import com.mistersomov.coinjet.screen.coin.view.CoinViewSimpleDe
