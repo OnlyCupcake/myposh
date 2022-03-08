@@ -37,4 +37,8 @@ import kotlinx.coroutines.launch
 @Composable
 fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltViewModel()) {
     val viewState = viewModel.coinViewState.collectAsState()
-    val searchViewState = viewModel.searchViewSt
+    val searchViewState = viewModel.searchViewState.collectAsState()
+    val detailsViewState = viewModel.coinDetailsViewState.collectAsState()
+
+    val scope = rememberCoroutineScope()
+    val scaffoldState = rememberB
