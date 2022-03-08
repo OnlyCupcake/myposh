@@ -29,4 +29,9 @@ import com.mistersomov.coinjet.screen.coin.view.CoinViewLoading
 import com.mistersomov.coinjet.screen.coin.view.CoinViewSimpleDetails
 import com.mistersomov.coinjet.screen.coin.view.search.SearchViewFirst
 import com.mistersomov.coinjet.screen.coin.view.search.SearchViewGlobal
-import com.mistersomov.coinjet.screen.
+import com.mistersomov.coinjet.screen.coin.view.search.SearchViewNoItems
+import com.mistersomov.coinjet.screen.coin.view.search.SearchViewRecent
+import kotlinx.coroutines.launch
+
+@OptIn(ExperimentalMaterialApi::class)
+@Compos
