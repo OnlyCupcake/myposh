@@ -34,4 +34,7 @@ import com.mistersomov.coinjet.screen.coin.view.search.SearchViewRecent
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterialApi::class)
-@Compos
+@Composable
+fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltViewModel()) {
+    val viewState = viewModel.coinViewState.collectAsState()
+    val searchViewState = viewModel.searchViewSt
