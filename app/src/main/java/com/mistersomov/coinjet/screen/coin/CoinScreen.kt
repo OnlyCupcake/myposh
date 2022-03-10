@@ -48,4 +48,9 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
     })
 
     BackdropScaffold(
-        scaffoldState
+        scaffoldState = scaffoldState,
+        appBar = { },
+        frontLayerScrimColor = Color.Unspecified,
+        backLayerBackgroundColor = CoinJetTheme.colors.primary,
+        peekHeight = 80.dp,
+  
