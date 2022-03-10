@@ -41,4 +41,11 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
     val detailsViewState = viewModel.coinDetailsViewState.collectAsState()
 
     val scope = rememberCoroutineScope()
-    val scaffoldState = rememberB
+    val scaffoldState = rememberBackdropScaffoldState(BackdropValue.Concealed)
+
+    LaunchedEffect(key1 = scaffoldState, block = {
+        scaffoldState.reveal()
+    })
+
+    BackdropScaffold(
+        scaffoldState
