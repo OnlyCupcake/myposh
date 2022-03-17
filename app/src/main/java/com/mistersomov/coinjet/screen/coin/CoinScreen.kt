@@ -53,4 +53,9 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
         frontLayerScrimColor = Color.Unspecified,
         backLayerBackgroundColor = CoinJetTheme.colors.primary,
         peekHeight = 80.dp,
-  
+        backLayerContent = {
+            Search(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp),
+                placeholderText = stringResource(id 
