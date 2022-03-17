@@ -58,4 +58,7 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp),
-                placeholderText = stringResource(id 
+                placeholderText = stringResource(id = R.string.crypto_search_placeholder),
+                onFocusChanged = {
+                    scope.launch { scaffoldState.reveal() }
+                    w
