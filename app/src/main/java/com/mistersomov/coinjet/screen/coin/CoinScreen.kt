@@ -61,4 +61,9 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                 placeholderText = stringResource(id = R.string.crypto_search_placeholder),
                 onFocusChanged = {
                     scope.launch { scaffoldState.reveal() }
-                    w
+                    with(viewModel) {
+                        obtainSearchEvent(SearchEvent.ShowRecentSearch)
+                        cancelSimpleDetailsJob()
+                    }
+                },
+      
