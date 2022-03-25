@@ -72,4 +72,7 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
             )
             Column(
                 modifier = Modifier
-            
+                    .fillMaxWidth()
+                    .padding(8.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.C
