@@ -66,4 +66,5 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                         cancelSimpleDetailsJob()
                     }
                 },
-      
+                onValueChanged = { viewModel.obtainSearchEvent(SearchEvent.LaunchSearch(it)) },
+                onCancelClicked = { viewModel.obtainSearchEvent(SearchEvent.Hide) }
