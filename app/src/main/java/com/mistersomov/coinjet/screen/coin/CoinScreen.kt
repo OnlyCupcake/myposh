@@ -75,4 +75,8 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                     .fillMaxWidth()
                     .padding(8.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.C
+                verticalArrangement = Arrangement.Center
+            ) {
+                when (val currentSearchState = searchViewState.value) {
+                    is SearchViewState.Hide -> {}
+                
