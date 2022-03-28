@@ -79,4 +79,6 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
             ) {
                 when (val currentSearchState = searchViewState.value) {
                     is SearchViewState.Hide -> {}
-                
+                    is SearchViewState.NoItems -> SearchViewNoItems()
+                    is SearchViewState.FirstSearch -> SearchViewFirst()
+                    is
