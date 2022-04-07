@@ -81,4 +81,7 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                     is SearchViewState.Hide -> {}
                     is SearchViewState.NoItems -> SearchViewNoItems()
                     is SearchViewState.FirstSearch -> SearchViewFirst()
-                    is
+                    is SearchViewState.Recent ->
+                        AnimatedVisibility(visible = true) {
+                            SearchViewRecent(
+                                view
