@@ -84,4 +84,7 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                     is SearchViewState.Recent ->
                         AnimatedVisibility(visible = true) {
                             SearchViewRecent(
-                                view
+                                viewState = currentSearchState,
+                                onItemClicked = {
+                                    scope.launch { scaffoldState.reveal() }
+                
