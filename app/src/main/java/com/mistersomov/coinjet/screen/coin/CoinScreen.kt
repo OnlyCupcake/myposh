@@ -93,4 +93,7 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                             )
                         }
                     is SearchViewState.Global ->
-                        AnimatedVisibility(
+                        AnimatedVisibility(visible = true) {
+                            SearchViewGlobal(
+                                viewState = currentSearchState,
+                                onIt
