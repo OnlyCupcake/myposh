@@ -102,4 +102,9 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                                         obtainSearchEvent(SearchEvent.Save(it))
                                         obtainEvent(CoinEvent.Click(it.symbol))
                                     }
-        
+                                })
+                        }
+                }
+            }
+            when (val current = detailsViewState.value) {
+                is CoinDetailsViewState.SimpleDe
