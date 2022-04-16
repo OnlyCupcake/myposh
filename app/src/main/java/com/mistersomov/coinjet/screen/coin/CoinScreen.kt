@@ -115,4 +115,11 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                         coin = current.coin,
                         onCancelClicked = {
                             with(viewModel) {
-                                cance
+                                cancelSimpleDetailsJob()
+                            }
+                        }
+                    )
+                else -> Unit
+            }
+        },
+        frontLayerElevation 
