@@ -111,4 +111,8 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                     CoinViewSimpleDetails(
                         modifier = Modifier.padding(
                             horizontal = 8.dp
-                
+                        ),
+                        coin = current.coin,
+                        onCancelClicked = {
+                            with(viewModel) {
+                                cance
