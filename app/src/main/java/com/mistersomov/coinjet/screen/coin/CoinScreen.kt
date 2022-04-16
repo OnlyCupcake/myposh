@@ -107,4 +107,8 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                 }
             }
             when (val current = detailsViewState.value) {
-                is CoinDetailsViewState.SimpleDe
+                is CoinDetailsViewState.SimpleDetails ->
+                    CoinViewSimpleDetails(
+                        modifier = Modifier.padding(
+                            horizontal = 8.dp
+                
