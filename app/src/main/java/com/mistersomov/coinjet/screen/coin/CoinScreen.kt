@@ -126,4 +126,8 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
         frontLayerBackgroundColor = CoinJetTheme.colors.surface,
         frontLayerContent = {
             when (val currentState = viewState.value) {
-                is CoinViewState.Loading -> CoinV
+                is CoinViewState.Loading -> CoinViewLoading()
+                is CoinViewState.Display ->
+                    CoinViewDisplay(
+                        navController = navController,
+               
