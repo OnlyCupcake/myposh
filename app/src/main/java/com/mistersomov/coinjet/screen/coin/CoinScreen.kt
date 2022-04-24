@@ -133,4 +133,8 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                         viewState = currentState,
                         onCoinClicked = {
                             scope.launch { scaffoldState.reveal() }
-             
+                            with(viewModel) {
+                                obtainEvent(CoinEvent.Click(it))
+                            }
+                        }
+            
