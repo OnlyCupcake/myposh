@@ -137,4 +137,8 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                                 obtainEvent(CoinEvent.Click(it))
                             }
                         }
-            
+                    )
+                is CoinViewState.NoItems -> Unit
+                //is CryptoViewState.Error -> CryptoViewError()
+                else -> throw NotImplementedError(
+                    strin
