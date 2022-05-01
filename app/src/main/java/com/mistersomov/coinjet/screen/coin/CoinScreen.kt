@@ -141,4 +141,10 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
                 is CoinViewState.NoItems -> Unit
                 //is CryptoViewState.Error -> CryptoViewError()
                 else -> throw NotImplementedError(
-                    strin
+                    stringResource(id = R.string.crypto_implementation_state_error)
+                )
+            }
+        })
+
+    LaunchedEffect(Unit, block = {
+        viewModel.obtainEven
