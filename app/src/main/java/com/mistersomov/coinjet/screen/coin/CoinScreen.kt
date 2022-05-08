@@ -147,4 +147,6 @@ fun CoinScreen(navController: NavController, viewModel: CoinViewModel = hiltView
         })
 
     LaunchedEffect(Unit, block = {
-        viewModel.obtainEven
+        viewModel.obtainEvent(CoinEvent.FetchData)
+    })
+}
