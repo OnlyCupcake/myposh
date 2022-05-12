@@ -133,3 +133,39 @@ class CoinViewModel @Inject constructor(
         viewModelScope.launch(searchJob + defaultDispatcher) {
             if (query.isBlank()) {
                 //showRecentSearch()
+                cancelSearchJob()
+            } else {
+                flow {
+                    emit(query)
+                    delay(DELAY_SEARCH)
+                }
+                    .debounce(DELAY_SEARCH)
+                    .collect {
+                        val searchList = getCoinListBySearchUseCase(it)
+
+                        _searchViewState.value = when {
+                            searchList.isEmpty() -> SearchViewState.NoItems
+                            else -> SearchViewState.Global(globalSearchList = searchList)
+                        }
+                    }
+            }
+        }
+    }
+
+    private fun saveCoinToCache(coin: Coin) {
+        cancelRecentSearchJob()
+        viewModelScope.launch {
+            saveCoinToCacheUseCase(coin)
+        }
+    }
+
+    private fun deleteSearchList() {
+        viewModelScope.launch {
+            clearSearchListUseCase()
+        }
+    }
+
+    companion object {
+        private const val DELAY_SEARCH = 500L
+    }
+}
