@@ -1,0 +1,1 @@
+package com.mistersomov.coinjet.screen.coin.mo
