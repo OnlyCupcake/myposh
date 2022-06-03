@@ -8,4 +8,9 @@ sealed class SearchEvent {
 
     object ShowRecentSearch : SearchEvent()
 
-    data class La
+    data class LaunchSearch(val query: String) : SearchEvent()
+
+    data class Save(val coin: Coin) : SearchEvent()
+
+    object ClearCache : SearchEvent()
+}
