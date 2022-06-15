@@ -12,4 +12,5 @@ sealed class SearchViewState {
 
     data class Recent(val recentSearchList: List<Coin>) : SearchViewState()
 
-    data class Global(val globalSearchList: List<Coin>) : Searc
+    data class Global(val globalSearchList: List<Coin>) : SearchViewState()
+}
