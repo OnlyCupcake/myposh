@@ -158,3 +158,33 @@ fun PercentChanging(
     val backgroundColor = if (percentValue == 0.0) {
         CoinJetTheme.colors.surfaceVariant
     } else if (percent > 0) {
+        CoinJetTheme.colors.green
+    } else CoinJetTheme.colors.errorContainer
+
+    val textColor = if (percentValue == 0.0) {
+        CoinJetTheme.colors.onSurfaceVariant
+    } else if (percentValue > 0) {
+        CoinJetTheme.colors.onGreen
+    } else CoinJetTheme.colors.error
+
+    Box(
+        modifier = modifier
+            .background(
+                color = backgroundColor,
+                shape = RoundedCornerShape(6.dp)
+            )
+            .size(width = 60.dp, height = 24.dp),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 4.dp, vertical = 2.dp),
+            text = "${percent.asPercentage()}%",
+            color = textColor,
+            style = CoinJetTheme.typography.titleSmall,
+            fontWeight = FontWeight.SemiBold,
+            textAlign = TextAlign.Center
+        )
+    }
+}
