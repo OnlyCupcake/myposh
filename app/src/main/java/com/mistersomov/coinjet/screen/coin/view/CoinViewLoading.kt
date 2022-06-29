@@ -10,4 +10,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import com.mistersomov.coinjet.core_ui.component.ListItem
-impor
+import com.mistersomov.coinjet.core_ui.effect.Shimmer
+
+@Composable
+fun CoinViewLoading() {
+    LazyColumn(contentPadding = PaddingValues(horizontal = 6.dp)) {
+        items(10) {
+   
