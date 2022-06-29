@@ -16,4 +16,15 @@ import com.mistersomov.coinjet.core_ui.effect.Shimmer
 fun CoinViewLoading() {
     LazyColumn(contentPadding = PaddingValues(horizontal = 6.dp)) {
         items(10) {
-   
+            ListItem(
+                isLoading = true,
+                content = {
+                    LoadingFields()
+                }) { }
+        }
+    }
+}
+
+@Composable
+fun LoadingFields() {
+    
