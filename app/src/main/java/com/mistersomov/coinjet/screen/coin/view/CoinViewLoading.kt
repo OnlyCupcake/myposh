@@ -27,4 +27,12 @@ fun CoinViewLoading() {
 
 @Composable
 fun LoadingFields() {
-    
+    Box(
+        modifier = Modifier
+            .size(32.dp)
+            .clip(CircleShape)
+    ) {
+        Shimmer(containerHeight = 32.dp)
+    }
+    Row(
+        modifier = Modif
