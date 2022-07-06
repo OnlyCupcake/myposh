@@ -35,4 +35,8 @@ fun LoadingFields() {
         Shimmer(containerHeight = 32.dp)
     }
     Row(
-        modifier = Modif
+        modifier = Modifier
+            .padding(start = 8.dp)
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.Center
