@@ -45,4 +45,9 @@ fun LoadingFields() {
             modifier = Modifier.padding(top = 14.dp, bottom = 6.dp),
             verticalArrangement = Arrangement.Center,
         ) {
+            Box(
+                modifier = Modifier
+                    .width(70.dp)
+                    .height(24.dp)
+                    .clip(RoundedCornerShape(24.dp))
          
