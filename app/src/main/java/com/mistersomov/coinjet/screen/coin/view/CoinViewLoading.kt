@@ -39,4 +39,10 @@ fun LoadingFields() {
             .padding(start = 8.dp)
             .fillMaxWidth(),
         horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.Center
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Column(
+            modifier = Modifier.padding(top = 14.dp, bottom = 6.dp),
+            verticalArrangement = Arrangement.Center,
+        ) {
+         
