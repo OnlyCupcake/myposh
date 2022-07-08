@@ -50,4 +50,10 @@ fun LoadingFields() {
                     .width(70.dp)
                     .height(24.dp)
                     .clip(RoundedCornerShape(24.dp))
-         
+            ) {
+                Shimmer(containerHeight = 32.dp)
+            }
+            Box(
+                modifier = Modifier
+                    .padding(top = 2.dp)
+                   
