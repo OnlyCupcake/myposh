@@ -61,4 +61,9 @@ fun LoadingFields() {
                     .clip(RoundedCornerShape(24.dp))
             ) {
                 Shimmer(containerHeight = 32.dp)
-          
+            }
+        }
+        Column(
+            modifier = Modifier.padding(top = 14.dp, bottom = 6.dp),
+            horizontalAlignment = Alignment.End,
+            verticalArrangement 
