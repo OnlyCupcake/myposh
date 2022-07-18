@@ -77,4 +77,9 @@ fun LoadingFields() {
                 Shimmer(containerHeight = 32.dp)
             }
             Box(
-                modifier = Modi
+                modifier = Modifier
+                    .padding(top = 2.dp)
+                    .width(134.dp)
+                    .height(16.dp)
+                    .clip(RoundedCornerShape(24.dp))
+            ) 
