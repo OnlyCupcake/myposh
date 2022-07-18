@@ -82,4 +82,9 @@ fun LoadingFields() {
                     .width(134.dp)
                     .height(16.dp)
                     .clip(RoundedCornerShape(24.dp))
-            ) 
+            ) {
+                Shimmer(containerHeight = 32.dp)
+            }
+        }
+    }
+}
