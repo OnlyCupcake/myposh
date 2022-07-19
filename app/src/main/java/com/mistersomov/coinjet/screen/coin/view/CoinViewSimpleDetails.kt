@@ -109,3 +109,134 @@ fun CoinViewSimpleDetails(
                     text = stringResource(id = R.string.coin_details_high_day),
                     style = CoinJetTheme.typography.labelSmall,
                     color = CoinJetTheme.colors.primaryContainer
+                )
+                Text(
+                    text = coin.high24Hour.formatCurrencyToDisplay(),
+                    style = CoinJetTheme.typography.titleMedium,
+                    color = CoinJetTheme.colors.onPrimary
+                )
+                Spacer(
+                    modifier = Modifier.height(12.dp)
+                )
+                Text(
+                    text = stringResource(id = R.string.coin_details_low_day),
+                    style = CoinJetTheme.typography.labelSmall,
+                    color = CoinJetTheme.colors.primaryContainer
+                )
+                Text(
+                    text = coin.low24Hour.formatCurrencyToDisplay(),
+                    style = CoinJetTheme.typography.titleMedium,
+                    color = CoinJetTheme.colors.onPrimary
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .width(1.dp)
+                    .height(100.dp)
+                    .background(brush = Brush.verticalGradient(dividerColorList))
+            )
+            Column(
+                horizontalAlignment = Alignment.Start,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = stringResource(id = R.string.coin_details_open_day),
+                    style = CoinJetTheme.typography.labelSmall,
+                    color = CoinJetTheme.colors.primaryContainer
+                )
+                Text(
+                    text = coin.open24Hour.formatCurrencyToDisplay(),
+                    style = CoinJetTheme.typography.titleMedium,
+                    color = CoinJetTheme.colors.onPrimary
+                )
+                Spacer(
+                    modifier = Modifier.height(12.dp)
+                )
+                Text(
+                    text = stringResource(id = R.string.coin_details_market_cap),
+                    style = CoinJetTheme.typography.labelSmall,
+                    color = CoinJetTheme.colors.primaryContainer
+                )
+                Text(
+                    text = coin.mktCap.formatBigDecimalsToDisplay(),
+                    style = CoinJetTheme.typography.titleMedium,
+                    color = CoinJetTheme.colors.onPrimary
+                )
+            }
+            Box(
+                modifier = Modifier
+                    .width(1.dp)
+                    .height(100.dp)
+                    .background(brush = Brush.verticalGradient(dividerColorList))
+            )
+            Column(
+                horizontalAlignment = Alignment.Start,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = String.format(
+                        stringResource(id = R.string.coin_details_volume),
+                        coin.symbol
+                    ),
+                    style = CoinJetTheme.typography.labelSmall,
+                    color = CoinJetTheme.colors.primaryContainer
+                )
+                Text(
+                    text = coin.volume24Hour.formatBigDecimalsToDisplay(),
+                    style = CoinJetTheme.typography.titleMedium,
+                    color = CoinJetTheme.colors.onPrimary
+                )
+                Spacer(
+                    modifier = Modifier.height(12.dp)
+                )
+                Text(
+                    text = String.format(
+                        stringResource(id = R.string.coin_details_volume),
+                        coin.toSymbol
+                    ),
+                    style = CoinJetTheme.typography.labelSmall,
+                    color = CoinJetTheme.colors.primaryContainer
+                )
+                Text(
+                    text = coin.volume24hourTo.formatBigDecimalsToDisplay(),
+                    style = CoinJetTheme.typography.titleMedium,
+                    color = CoinJetTheme.colors.onPrimary
+                )
+            }
+        }
+        Spacer(
+            modifier = Modifier.height(6.dp)
+        )
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Column(
+                horizontalAlignment = Alignment.Start,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = '#' + coin.symbol + " / " + coin.toSymbol,
+                    style = CoinJetTheme.typography.titleMedium,
+                    color = CoinJetTheme.colors.primaryContainer
+                )
+                Text(
+                    text = coin.price.formatCurrencyToDisplay(),
+                    style = CoinJetTheme.typography.headlineMedium,
+                    color = animateDigitColor(
+                        digit = coin.price,
+                        initialColor = CoinJetTheme.colors.onPrimary
+                    )
+                )
+            }
+            IconButton(onClick = { }) {
+                Icon(
+                    imageVector = ImageVector.vectorResource(id = R.drawable.maximize_square),
+                    contentDescription = null,
+                    tint = CoinJetTheme.colors.onPrimary
+                )
+            }
+        }
+    }
+}
