@@ -12,4 +12,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
-import co
+import coil.compose.AsyncImage
+import com.mistersomov.coinjet.core_ui.CoinJetTheme
+import com.mistersomov.coinjet.domain.model.Coin
+
+@Composable
+fun SearchCoinDetails(
+    modifier: Modifier = Modifier,
+  
