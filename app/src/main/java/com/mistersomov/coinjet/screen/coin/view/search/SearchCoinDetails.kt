@@ -26,4 +26,8 @@ fun SearchCoinDetails(
         modifier = modifier
             .fillMaxWidth()
             .clickable(
-                interactionSource = reme
+                interactionSource = remember { MutableInteractionSource() },
+                indication = null,
+                onClick = { onItemClicked.invoke() }
+            ),
+        verticalAlignment = Alignment.C
