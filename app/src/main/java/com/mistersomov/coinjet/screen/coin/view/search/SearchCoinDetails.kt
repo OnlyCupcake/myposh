@@ -19,4 +19,11 @@ import com.mistersomov.coinjet.domain.model.Coin
 @Composable
 fun SearchCoinDetails(
     modifier: Modifier = Modifier,
-  
+    coin: Coin?,
+    onItemClicked: () -> Unit,
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable(
+                interactionSource = reme
