@@ -30,4 +30,10 @@ fun SearchCoinDetails(
                 indication = null,
                 onClick = { onItemClicked.invoke() }
             ),
-        verticalAlignment = Alignment.C
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        AsyncImage(
+            model = coin?.imageUrl,
+            modifier = Modifier
+                .padding(vertical = 10.dp)
+              
