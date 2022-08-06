@@ -36,4 +36,9 @@ fun SearchCoinDetails(
             model = coin?.imageUrl,
             modifier = Modifier
                 .padding(vertical = 10.dp)
-              
+                .size(32.dp)
+                .clip(CircleShape),
+            contentDescription = null,
+            alignment = Alignment.Center,
+            contentScale = ContentScale.Crop
+ 
