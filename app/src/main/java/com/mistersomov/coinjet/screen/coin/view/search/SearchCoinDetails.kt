@@ -41,4 +41,8 @@ fun SearchCoinDetails(
             contentDescription = null,
             alignment = Alignment.Center,
             contentScale = ContentScale.Crop
- 
+        )
+        Spacer(modifier = Modifier.width(10.dp))
+        Text(
+            text = coin?.fullName ?: "",
+            color = CoinJetTheme.colors.onPrim
