@@ -1,0 +1,1 @@
+package com.mistersomov.coinjet.scr
