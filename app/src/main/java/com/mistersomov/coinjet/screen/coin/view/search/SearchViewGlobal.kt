@@ -11,4 +11,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androi
+import androidx.compose.ui.unit.dp
+import com.mistersomov.coinjet.R
+import com.mistersomov.coinjet.core_ui.CoinJetTheme
+import com.mistersomov.coinjet.domain.model.Coin
+import com.
