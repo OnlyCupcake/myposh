@@ -15,4 +15,10 @@ import androidx.compose.ui.unit.dp
 import com.mistersomov.coinjet.R
 import com.mistersomov.coinjet.core_ui.CoinJetTheme
 import com.mistersomov.coinjet.domain.model.Coin
-import com.
+import com.mistersomov.coinjet.screen.coin.model.SearchViewState
+import kotlinx.coroutines.launch
+
+@SuppressLint("CoroutineCreationDuringComposition")
+@Composable
+fun SearchViewGlobal(
+    viewState: Sear
