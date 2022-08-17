@@ -21,4 +21,9 @@ import kotlinx.coroutines.launch
 @SuppressLint("CoroutineCreationDuringComposition")
 @Composable
 fun SearchViewGlobal(
-    viewState: Sear
+    viewState: SearchViewState.Global,
+    onItemClicked: (Coin) -> Unit
+) {
+    val scope = rememberCoroutineScope()
+    val searchList = viewState.globalSearchList
+    val listState = rememberLazyLi
