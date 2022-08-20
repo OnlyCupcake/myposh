@@ -30,4 +30,11 @@ fun SearchViewGlobal(
     val isFirstItemVisible by remember { derivedStateOf { listState.firstVisibleItemIndex == 0 } }
 
     if (!isFirstItemVisible) {
-        sco
+        scope.launch { listState.animateScrollToItem(0) }
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxWidth(),
+        verticalArrangement = Arrangement.Center
+    ) 
