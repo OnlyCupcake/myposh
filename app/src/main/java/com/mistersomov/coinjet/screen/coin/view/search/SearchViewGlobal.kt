@@ -26,4 +26,8 @@ fun SearchViewGlobal(
 ) {
     val scope = rememberCoroutineScope()
     val searchList = viewState.globalSearchList
-    val listState = rememberLazyLi
+    val listState = rememberLazyListState()
+    val isFirstItemVisible by remember { derivedStateOf { listState.firstVisibleItemIndex == 0 } }
+
+    if (!isFirstItemVisible) {
+        sco
