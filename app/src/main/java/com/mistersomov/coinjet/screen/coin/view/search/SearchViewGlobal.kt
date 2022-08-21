@@ -41,4 +41,10 @@ fun SearchViewGlobal(
         Text(
             text = stringResource(id = R.string.crypto_search_headline_title),
             color = CoinJetTheme.colors.surfaceVariant,
-            st
+            style = CoinJetTheme.typography.titleMedium
+        )
+        Divider(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 6.dp),
+            color
