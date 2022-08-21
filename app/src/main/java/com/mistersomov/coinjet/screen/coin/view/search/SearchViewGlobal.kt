@@ -37,4 +37,8 @@ fun SearchViewGlobal(
         modifier = Modifier
             .fillMaxWidth(),
         verticalArrangement = Arrangement.Center
-    ) 
+    ) {
+        Text(
+            text = stringResource(id = R.string.crypto_search_headline_title),
+            color = CoinJetTheme.colors.surfaceVariant,
+            st
