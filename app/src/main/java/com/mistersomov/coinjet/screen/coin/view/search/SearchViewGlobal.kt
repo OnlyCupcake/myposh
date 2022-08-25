@@ -47,4 +47,9 @@ fun SearchViewGlobal(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 6.dp),
-            color
+            color = CoinJetTheme.colors.surfaceVariant
+        )
+        LazyColumn(
+            state = listState,
+            horizontalAlignment = Alignment.CenterHorizontally,
+         
