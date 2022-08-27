@@ -52,4 +52,9 @@ fun SearchViewGlobal(
         LazyColumn(
             state = listState,
             horizontalAlignment = Alignment.CenterHorizontally,
-         
+            verticalArrangement = Arrangement.Center
+        ) {
+            items(
+                items = searchList,
+                key = { coin -> coin.id },
+                contentType = 
