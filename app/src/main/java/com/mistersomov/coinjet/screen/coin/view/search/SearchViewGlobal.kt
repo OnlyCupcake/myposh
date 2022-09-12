@@ -57,4 +57,7 @@ fun SearchViewGlobal(
             items(
                 items = searchList,
                 key = { coin -> coin.id },
-                contentType = 
+                contentType = { it::class.java }
+            ) { item ->
+                SearchCoinDetails(coin = item) {
+                    onItemClicked.invoke(item)
