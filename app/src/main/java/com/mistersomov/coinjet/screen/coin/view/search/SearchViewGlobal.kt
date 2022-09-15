@@ -61,3 +61,8 @@ fun SearchViewGlobal(
             ) { item ->
                 SearchCoinDetails(coin = item) {
                     onItemClicked.invoke(item)
+                }
+            }
+        }
+    }
+}
