@@ -9,3 +9,9 @@ import androidx.compose.material.Text
 import androidx.compose.material.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import com.mistersomov.coinjet.R
+import com.mistersomov.coinjet.core_ui.CoinJetTheme
+i
