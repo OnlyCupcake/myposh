@@ -14,4 +14,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.mistersomov.coinjet.R
 import com.mistersomov.coinjet.core_ui.CoinJetTheme
-i
+import com.mistersomov.coinjet.domain.model.Coin
+import com.mistersomov.coinjet.screen.coin.model.SearchViewState
+
+@Composable
+fun SearchViewRecent(
+    viewState: SearchViewState.Re
