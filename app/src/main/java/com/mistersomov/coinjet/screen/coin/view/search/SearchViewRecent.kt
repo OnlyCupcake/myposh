@@ -19,4 +19,11 @@ import com.mistersomov.coinjet.screen.coin.model.SearchViewState
 
 @Composable
 fun SearchViewRecent(
-    viewState: SearchViewState.Re
+    viewState: SearchViewState.Recent,
+    onItemClicked: (Coin) -> Unit,
+    onClearClicked: () -> Unit,
+) {
+    val recentSearchList = viewState.recentSearchList
+
+    Column(
+        modifier = Modifier.fillMa
