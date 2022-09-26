@@ -39,4 +39,8 @@ fun SearchViewRecent(
             Text(
                 text = stringResource(id = R.string.crypto_search_headline_title_recent_searches),
                 color = CoinJetTheme.colors.surfaceVariant,
-                style =
+                style = CoinJetTheme.typography.titleMedium
+            )
+            TextButton(
+                onClick = { onClearClicked.invoke() },
+              
