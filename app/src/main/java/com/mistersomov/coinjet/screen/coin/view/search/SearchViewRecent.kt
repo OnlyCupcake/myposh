@@ -43,4 +43,8 @@ fun SearchViewRecent(
             )
             TextButton(
                 onClick = { onClearClicked.invoke() },
-              
+                shape = RoundedCornerShape(24.dp)
+            ) {
+                Text(
+                    text = stringResource(id = R.string.crypto_search_clear_cache),
+                    color = 
