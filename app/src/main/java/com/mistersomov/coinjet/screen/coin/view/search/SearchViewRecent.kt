@@ -54,4 +54,9 @@ fun SearchViewRecent(
         Divider(
             modifier = Modifier.fillMaxWidth(), color = CoinJetTheme.colors.surfaceVariant
         )
-  
+        LazyColumn(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            items(
+     
