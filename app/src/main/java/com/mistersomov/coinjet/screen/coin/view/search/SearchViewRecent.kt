@@ -47,4 +47,11 @@ fun SearchViewRecent(
             ) {
                 Text(
                     text = stringResource(id = R.string.crypto_search_clear_cache),
-                    color = 
+                    color = CoinJetTheme.colors.onPrimary
+                )
+            }
+        }
+        Divider(
+            modifier = Modifier.fillMaxWidth(), color = CoinJetTheme.colors.surfaceVariant
+        )
+  
