@@ -63,4 +63,11 @@ fun SearchViewRecent(
                 key = { coin -> coin.id },
                 contentType = { it::class.java }
             ) { item ->
-        
+                SearchCoinDetails(
+                    coin = item,
+                    onItemClicked = { onItemClicked.invoke(item) }
+                )
+            }
+        }
+    }
+}
