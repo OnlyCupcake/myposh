@@ -59,4 +59,8 @@ fun SearchViewRecent(
             verticalArrangement = Arrangement.Center
         ) {
             items(
-     
+                items = recentSearchList,
+                key = { coin -> coin.id },
+                contentType = { it::class.java }
+            ) { item ->
+        
