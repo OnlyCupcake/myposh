@@ -5,4 +5,10 @@ import org.joda.time.DateTimeZone
 import java.sql.Timestamp
 
 fun Long?.convertTime(): String {
-    retu
+    return when {
+        this == null -> ""
+        else -> {
+            val pattern = "HH:mm:ss"
+            val timestamp = Timestamp(this * 1000)
+
+            r
