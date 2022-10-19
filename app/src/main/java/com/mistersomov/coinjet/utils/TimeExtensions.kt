@@ -11,4 +11,7 @@ fun Long?.convertTime(): String {
             val pattern = "HH:mm:ss"
             val timestamp = Timestamp(this * 1000)
 
-            r
+            return DateTime(timestamp.time, DateTimeZone.getDefault()).toString(pattern)
+        }
+    }
+}
