@@ -2,4 +2,6 @@
     android:width="24dp"
     android:height="24dp"
     android:viewportWidth="24"
-    android:viewportHeight="
+    android:viewportHeight="24">
+  <path
+      android:pathData="M10.03,8.97C9.737,8.677 9.263,8.677 8.97,8.97C8.677,9.263 8.677,9.737 8.97,10.03L10.939,12L8.97,13.97C8.677,14.262 8.677,14.737 8.97,15.03C9.263,1
