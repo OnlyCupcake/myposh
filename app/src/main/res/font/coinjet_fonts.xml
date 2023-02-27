@@ -3,4 +3,11 @@
 
     <font
         android:font="@font/inter_regular"
-     
+        android:fontStyle="normal" />
+
+    <font
+        android:font="@font/inter_bold"
+        android:fontStyle="normal" />
+
+    <font
+        android:font="@font/inter_semibold"
