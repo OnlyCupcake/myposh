@@ -3,4 +3,10 @@
 
     <font
         android:font="@font/inter_regular"
-        android:
+        android:fontStyle="normal"
+        android:fontWeight="400" />
+
+    <font
+        android:font="@font/inter_bold"
+        android:fontStyle="normal"
+        android:fontW
