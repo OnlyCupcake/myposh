@@ -17,4 +17,7 @@
         android:fontWeight="500" />
 
     <font
-        android:font="@font/
+        android:font="@font/inter_medium"
+        android:fontStyle="normal" />
+
+</font-family>
