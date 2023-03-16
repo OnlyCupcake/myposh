@@ -1,0 +1,31 @@
+
+<resources>
+    <string name="crypto_search_placeholder" translatable="false">#BTC, Bitcoin</string>
+    <string name="crypto_favorites">Favorites</string>
+    <string name="crypto_last_update">Updated: %s </string>
+
+    <!--Coin Details-->
+    <string name="coin_details_high_day">High Day</string>
+    <string name="coin_details_low_day">Low Day</string>
+    <string name="coin_details_open_day">Open Day</string>
+    <string name="coin_details_market_cap">Market Cap</string>
+    <string name="coin_details_volume">24h Vol(%s)</string>
+
+    <!--Search-->
+    <string name="crypto_search_headline_title">Cryptoassets</string>
+    <string name="crypto_search_headline_title_recent_searches">Recent Searches</string>
+    <string name="crypto_search_headline_title_first_search">Find something</string>
+    <string name="crypto_search_headline_title_no_items">No matches found</string>
+    <string name="crypto_search_category_fullname">Full Name</string>
+    <string name="crypto_search_category_name">Name</string>
+    <string name="crypto_search_category_price">Price</string>
+    <string name="crypto_search_category_24h_changes">24h%</string>
+    <string name="crypto_search_clear_cache">Clear</string>
+
+    <!--error-->
+    <string name="crypto_implementation_state_error" translatable="false">Unexpected state</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="error_colors_provided" translatable="false">No colors provided</string>
+    <string name="error_typography_provided" translatable="false">No typography provided</string>
+</resources>
